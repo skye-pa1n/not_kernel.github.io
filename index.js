@@ -6,6 +6,8 @@ fetch('/props.json')
     const userSkye = PropsJson["usuario"];
     const nomeOffTopic = PropsJson["nome-grupo-telegram"];
     const linkOffTopic = PropsJson["link-grupo-telegram"];
+    const nomeOffTopiclm = PropsJson["nome-grupolcm-telegram"];
+    const linkOffTopiclm = PropsJson["link-grupolcm-telegram"]
     
     function modificarElementosViaJson() {
       document.title = nomeDoSite;
@@ -14,6 +16,8 @@ fetch('/props.json')
       document.getElementById("usuario").textContent = userSkye;
       document.getElementById("nome-telegram").textContent = nomeOffTopic;
       document.getElementById("link-telegram").href = linkOffTopic;
+      document.getElementById("nome-lmtelegram").textContent = nomeOffTopiclm;
+      document.getElementById("link-lmtelegram").href = linkOffTopiclm;
     }
     
     modificarElementosViaJson();
